@@ -1,13 +1,14 @@
 import './SearchBar.css';
 import { useState } from 'react';
 import SearchOutput from '../Search Output/SearchOutput';
-import apiKey from './apiKey';
+
 
 
 
 export const SearchBar = () => {
     const [search, setSearch] = useState('');
     const [searchResults, setSearchResults] = useState([]);
+    const apiKey = 'a966bfd0991cf6614938f968e9c6db0a'
     const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${search}&page=1`
 
     const handleSearch = async () => {
