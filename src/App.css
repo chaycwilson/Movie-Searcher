@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+:root {
+  --background-color: #f8f8f8;
+  --text-color: #333333;
+}
+
+.app.dark {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
+
+.app {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
